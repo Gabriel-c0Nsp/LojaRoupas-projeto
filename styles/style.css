@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f3ed;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-bar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    /* background: red; */
+    align-items: center;
+    /* position: fixed; */
+    width: 100%;
+}
+
+.logo {
+  font-family: 'Quicksand';
+}
+
+.logo > h1 {
+  margin-left: 36px;
+  margin-top: 0.4rem;
+  letter-spacing: 10px;
+  font-size: 40px;
+  font-weight: 350;
+}
+
