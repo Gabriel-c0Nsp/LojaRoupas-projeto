@@ -7,11 +7,6 @@
   background-color: #f5f3ed;
 }
 
-.app-container {
-  display: flex;
-  flex-direction: row;
-}
-
 .menu-bar {
     display: flex;
     flex-flow: row wrap;
@@ -22,10 +17,10 @@
 
 .logo > h1 {
     font-family: 'Quicksand', sans-serif;
-    padding-left: 40px; 
+    padding-left: 55px; 
     margin-top: 0.4rem;
     letter-spacing: 10px;
-    font-size: 40px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -34,9 +29,9 @@
   flex-direction: row;
   justify-content: flex-end;
   width: 334px;
-  height: 45px;
-  margin: 30px auto;
-  margin-left: 451px;
+  height: 43px;
+  margin: 30px ;
+  margin-left: 466px;
 }
 
 .search-box > input {
@@ -44,9 +39,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
   color: #8b7d77;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: 79%;
   height: 100%;
   padding: 10px 20px;
 }
@@ -71,6 +64,7 @@
   color: #fff;
   background-color: #000;
   font-size: 22px;
+  line-height: 0.8;
 }
 
 .user-options > ul {
@@ -82,7 +76,7 @@
 .user-options > ul > li {
   opacity: 0.65;
   list-style: none;
-  font-size: 22px;
+  font-size: 19px;
 }
 
 .user-options > ul > li > a {
@@ -96,9 +90,50 @@
 .icon-number {
   position: relative;
   color: #000; 
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .user-options > ul > li > a {
   text-decoration: none; 
+}
+
+.navigation-bar > nav > div > ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navigation-bar > nav > div > ul > li {
+  list-style: none;
+}
+
+.navigation-bar > nav > div > ul > li > a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation-bar > nav > div > ul > li > a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  height: 1.5px;
+  background-color: rgba(224, 0, 0, 1);
+  width: 0;
+  transition: .3s;
+  /* transition: background-color 0.8s ease;  */
+}
+
+.navigation-bar > nav > div > ul > li > a:hover::before {
+  width: 100%;
+  /* background-color: rgba(224, 0, 0, 1); */
+}
+
+.navigation-bar > nav > div > ul > li > a:hover {
+  /* color: rgb(224, 0, 0, 1); */
+  color: rgb(189, 2, 2, 1);
 }
