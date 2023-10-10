@@ -1,27 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f3ed;
 }
 
 .menu-bar {
-    display: flex;
-    flex-flow: row wrap;
-    height: 100px;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  align-items: center;
+  width: 100%;
 }
 
-.logo > h1 {
-    font-family: 'Quicksand', sans-serif;
-    padding-left: 55px; 
-    margin-top: 0.4rem;
-    letter-spacing: 10px;
-    font-size: 45px;
-    font-weight: 600;
+.logo > a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo > a > h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-left: 55px;
+  margin-top: 0.4rem;
+  letter-spacing: 10px;
+  font-size: 45px;
+  font-weight: 590;
 }
 
 .search-box {
@@ -30,7 +35,7 @@
   justify-content: flex-end;
   width: 334px;
   height: 43px;
-  margin: 30px ;
+  margin: 30px;
   margin-left: 466px;
 }
 
@@ -80,7 +85,7 @@
 }
 
 .user-options > ul > li > a {
-  padding: 0 10px; 
+  padding: 0 10px;
 }
 
 .user-options > ul > li:hover {
@@ -89,12 +94,12 @@
 
 .icon-number {
   position: relative;
-  color: #000; 
+  color: #000;
   font-size: 15px;
 }
 
 .user-options > ul > li > a {
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 .navigation-bar > nav > div > ul {
@@ -117,7 +122,7 @@
 }
 
 .navigation-bar > nav > div > ul > li > a::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
