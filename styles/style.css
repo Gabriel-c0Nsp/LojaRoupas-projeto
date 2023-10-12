@@ -36,7 +36,8 @@
   width: 334px;
   height: 43px;
   margin: 30px;
-  margin-left: 466px;
+  margin-left: 450px;
+  /* margin-left: 466px; */
 }
 
 .search-box > input {
@@ -139,4 +140,29 @@
 
 .navigation-bar > nav > div > ul > li > a:hover {
   color: rgb(189, 2, 2, 1);
+}
+
+.slide-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 6;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider > img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
 }
