@@ -37,7 +37,6 @@
   height: 43px;
   margin: 30px;
   margin-left: 450px;
-  /* margin-left: 466px; */
 }
 
 .search-box > input {
@@ -160,6 +159,7 @@
 .slide {
   width: 20%;
   position: relative;
+  transition: 2s;
 }
 
 .slide > img {
@@ -212,4 +212,46 @@
 
 #radio5:checked ~ .first {
   margin-left: -80%;
+}
+
+.navigation-auto > div {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 9px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.navigation-auto {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  margin-top: 428px;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background-color: #fff;
 }
