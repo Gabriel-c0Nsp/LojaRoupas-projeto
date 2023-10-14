@@ -24,7 +24,7 @@
     <div class="app-container">
       <nav class="menu-bar">
         <div class="logo">
-         <a href="#"><h1>LOGO</h1></a>
+          <a href="#"><h1>LOGO</h1></a>
         </div>
 
         <div class="search-box">
@@ -83,35 +83,49 @@
         </nav>
       </div>
 
-      <div class="slide-container">
-      <div class="slider-wrapper">
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-button" id="radio1" />
+          <input type="radio" name="radio-button" id="radio2" />
+          <input type="radio" name="radio-button" id="radio3" />
+          <input type="radio" name="radio-button" id="radio4" />
+          <input type="radio" name="radio-button" id="radio5" />
 
-        <div class="slider">
-          <img id ="slide-1" src="assets/images/image-1.jpg" alt="first-image">
-          <img id ="slide-2" src="assets/images/image-2.jpg" alt="second-image">
-          <img id ="slide-3" src="assets/images/image-3.jpg" alt="third-image">
-          <img id ="slide-4" src="assets/images/image-4.jpg" alt="fourth-image">
-          <img id ="slide-5" src="assets/images/image-5.jpg" alt="fitfh-image">
-          <img id ="slide-6" src="assets/images/image-6.jpg" alt="sixth-image">
-          <img id ="slide-7" src="assets/images/image-7.jpg" alt="seventh-image">
-          <img id ="slide-8" src="assets/images/image-8.jpg" alt="eighth-image">
-          <img id ="slide-9" src="assets/images/image-9.jpg" alt="ninth-image">
+          <div class="slide first">
+            <img src="assets/images/image-1.jpg" alt="image 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/image-2.jpg" alt="image 2" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/image-3.jpg" alt="image 3" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/image-4.jpg" alt="image 4" />
+          </div>
+          <div class="slide">
+            <img src="assets/images/image-5.jpg" alt="image 5" />
+          </div>
+
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+
         </div>
-
-        <div class="slider-nav">
-          <a href="#image"></a>
-          <a href="#image2"></a>
-          <a href="#image4"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
         </div>
-
-      </div>
       </div>
     </div>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
