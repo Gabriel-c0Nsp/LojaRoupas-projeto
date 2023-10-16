@@ -142,6 +142,7 @@
 }
 
 .slider {
+  position: relative;
   margin: 30px auto;
   width: 100%;
   overflow: hidden;
@@ -177,12 +178,12 @@
 }
 
 .manual-btn {
-  border: 1px solid #fff;
+  border: 1px solid transparent;
   background-color: transparent;
   padding: 9px;
   border-radius: 50px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .manual-btn:not(:last-child) {
@@ -196,7 +197,6 @@
 #radio1:checked ~ .first {
   margin-left: 0;
 }
-
 
 #radio2:checked ~ .first {
   margin-left: -20%;
@@ -220,7 +220,7 @@
   padding: 9px;
   border-radius: 50px;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .navigation-auto {
@@ -254,4 +254,33 @@
 
 #radio5:checked ~ .navigation-auto .auto-btn5 {
   background-color: #fff;
+}
+
+.navigation-manual-btns i {
+  color: #fff;
+  font-size: 50px;
+}
+
+.navigation-manual-btns .left {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  left: 3%;
+  top: 42%;
+}
+
+.navigation-manual-btns .left:hover {
+  font-size: 60px;
+}
+
+.navigation-manual-btns .right {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  right: 3%;
+  top: 42%;
+}
+
+.navigation-manual-btns .right:hover {
+  font-size: 60px;
 }
