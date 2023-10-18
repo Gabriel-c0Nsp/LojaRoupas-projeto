@@ -284,3 +284,22 @@
 .navigation-manual-btns .right:hover {
   font-size: 60px;
 }
+
+.cards-container {
+  background-color: red;
+  width: 96%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 70px;
+  grid-gap: 10px; 
+  justify-items: center;
+}
+
+.card-container {
+  background-color: blue;
+  width: 275px;
+  height: 402px;
+  margin-bottom: 10px;
+}
