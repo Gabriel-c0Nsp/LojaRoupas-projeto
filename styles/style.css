@@ -15,12 +15,12 @@
   width: 100%;
 }
 
-.logo > a {
+.logo a {
   text-decoration: none;
   color: black;
 }
 
-.logo > a > h1 {
+.logo a  h1 {
   font-family: "Quicksand", sans-serif;
   padding-left: 55px;
   margin-top: 0.4rem;
@@ -39,7 +39,7 @@
   margin-left: 450px;
 }
 
-.search-box > input {
+.search-box input {
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.2);
   outline: none;
@@ -72,23 +72,23 @@
   line-height: 0.8;
 }
 
-.user-options > ul {
+.user-options ul {
   display: flex;
   align-items: center;
   margin-right: 44px;
 }
 
-.user-options > ul > li {
+.user-options ul li {
   opacity: 0.65;
   list-style: none;
   font-size: 19px;
 }
 
-.user-options > ul > li > a {
+.user-options ul li a {
   padding: 0 10px;
 }
 
-.user-options > ul > li:hover {
+.user-options ul li:hover {
   opacity: 1;
 }
 
@@ -98,11 +98,11 @@
   font-size: 15px;
 }
 
-.user-options > ul > li > a {
+.user-options ul li a {
   text-decoration: none;
 }
 
-.navigation-bar > nav > div > ul {
+.navigation-bar nav div ul {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,17 +111,17 @@
   padding-right: 12px;
 }
 
-.navigation-bar > nav > div > ul > li {
+.navigation-bar nav div ul li {
   list-style: none;
 }
 
-.navigation-bar > nav > div > ul > li > a {
+.navigation-bar nav div ul li a {
   position: relative;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
 }
 
-.navigation-bar > nav > div > ul > li > a::before {
+.navigation-bar nav div ul li a::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -133,11 +133,11 @@
   transition: width 0.3s;
 }
 
-.navigation-bar > nav > div > ul > li > a:hover::before {
+.navigation-bar nav div ul li a:hover::before {
   width: 100%;
 }
 
-.navigation-bar > nav > div > ul > li > a:hover {
+.navigation-bar nav div ul li a:hover {
   color: rgb(189, 2, 2, 1);
 }
 
@@ -153,7 +153,7 @@
   display: flex;
 }
 
-.slides > input {
+.slides input {
   display: none;
 }
 
@@ -163,7 +163,7 @@
   transition: 2s;
 }
 
-.slide > img {
+.slide img {
   aspect-ratio: 16 / 6;
   width: 100%;
 }
@@ -214,7 +214,7 @@
   margin-left: -80%;
 }
 
-.navigation-auto > div {
+.navigation-auto div {
   background-color: transparent;
   border: 1px solid #fff;
   padding: 9px;
@@ -332,4 +332,36 @@
   background-color: #fff;
   font-weight: bold;
   font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+}
+
+footer .span-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none; 
+  color: #000;
+  margin: 7px;
+}
+
+footer a i {
+  font-size: 23px;
 }
