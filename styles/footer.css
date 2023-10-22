@@ -1,0 +1,31 @@
+footer {
+  width: 100%;
+  padding: 50px;
+  justify-content: center;
+}
+
+footer .span-container {
+  display: flex;
+  justify-content: center;
+}
+
+footer .icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer span {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none; 
+  color: #000;
+  margin: 7px;
+}
+
+footer a i {
+  font-size: 23px;
+}

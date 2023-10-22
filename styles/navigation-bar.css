@@ -1,0 +1,39 @@
+.navigation-bar nav div ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.navigation-bar nav div ul li {
+  list-style: none;
+}
+
+.navigation-bar nav div ul li a {
+  position: relative;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.navigation-bar nav div ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 1.5px;
+  background-color: rgba(224, 0, 0, 1);
+  width: 0;
+  transition: width 0.3s;
+}
+
+.navigation-bar nav div ul li a:hover::before {
+  width: 100%;
+}
+
+.navigation-bar nav div ul li a:hover {
+  color: rgb(189, 2, 2, 1);
+}
+

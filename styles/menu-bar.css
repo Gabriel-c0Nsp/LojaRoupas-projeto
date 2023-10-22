@@ -1,0 +1,94 @@
+.menu-bar {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100px;
+  align-items: center;
+  width: 100%;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo a  h1 {
+  font-family: "Quicksand", sans-serif;
+  padding-left: 55px;
+  margin-top: 0.4rem;
+  letter-spacing: 10px;
+  font-size: 45px;
+  font-weight: 590;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 334px;
+  height: 43px;
+  margin: 30px;
+  margin-left: 450px;
+}
+
+.search-box input {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  color: #8b7d77;
+  width: 79%;
+  height: 100%;
+  padding: 10px 20px;
+}
+
+.search-box .common_button {
+  border: 1px solid black;
+  width: 60px;
+  background-color: #000;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.search-box .common_button:hover {
+  opacity: 0.7;
+}
+
+.search-box .common_button .fa-solid {
+  display: flex;
+  margin-top: 22%;
+  align-content: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #000;
+  font-size: 22px;
+  line-height: 0.8;
+}
+
+.user-options ul {
+  display: flex;
+  align-items: center;
+  margin-right: 44px;
+}
+
+.user-options ul li {
+  opacity: 0.65;
+  list-style: none;
+  font-size: 19px;
+}
+
+.user-options ul li a {
+  padding: 0 10px;
+}
+
+.user-options ul li:hover {
+  opacity: 1;
+}
+
+.icon-number {
+  position: relative;
+  color: #000;
+  font-size: 15px;
+}
+
+.user-options ul li a {
+  text-decoration: none;
+}
