@@ -318,6 +318,27 @@
   height: auto;
 }
 
+.cards-container .favorite-status {
+  background-color: transparent;
+  position: absolute;
+  margin: 9px;
+  margin-top: 18px;
+  margin-left: 221px;
+}
+
+.cards-container .favorite-status i {
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.cards-container .favorite-icon {
+  display: none;
+}
+
+.card-container:hover .favorite-icon {
+  display: inline-block;
+}
+
 .cards-container .product-info {
   background-color: #fff;
   width: 100%;
