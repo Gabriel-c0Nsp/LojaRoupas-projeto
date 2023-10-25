@@ -8,7 +8,7 @@
     <link href="../styles/index/style.css" rel="stylesheet" />
     <link href="../styles/index/menu-bar.css" rel="stylesheet" />
     <link href="../styles/index/navigation-bar.css" rel="stylesheet" />
-    <link href="../styles/login-page/login.css" rel="stylesheet" />
+    <link href="../styles/singin-page/singin.css" rel="stylesheet" />
     <!-- icons -->
     <script
       src="https://kit.fontawesome.com/97faa798f5.js"
@@ -80,7 +80,11 @@
     <div class="login-container">
       <div class="login-area">
         <form action="">
-          <h2>LOGIN</h2>
+          <h2>CRIAR CONTA</h2>
+          <div class="form-group">
+            <label for="">Nome ou apelido:</label>
+            <input type="text" class="form-control" required />
+          </div>
           <div class="form-group">
             <label for="">Número de celular ou E-mail:</label>
             <input type="text" class="form-control" required />
@@ -90,16 +94,13 @@
             <input type="password" class="form-control" required />
           </div>
           <input type="submit" class="form-button" value="CONTINUAR" />
-          <span class="forgot-password"
-            ><a href="#">Esqueceu a sua senha?</a></span
-          >
           <div class="hrs-container">
             <div class="hr-left"></div>
             <span class="or-option">Ou</span>
             <div class="hr-right"></div>
           </div>
           <span class="social-media-choice"
-            >FAÇA SEU LOGIN COM REDE SOCIAL</span
+            >CRIE SUA CONTA USANDO REDE SOCIAL</span
           >
           <div class="social-media-buttons-container">
             <div class="google-icon">
@@ -119,7 +120,7 @@
             </div>
           </div>
           <span class="sign-up"
-            >Precisa de uma conta?&nbsp<a href="singin-page.html">REGISTRAR</a></span
+            >Já possui uma conta?&nbsp<a href="login-page.html">LOGIN</a></span
           >
         </form>
       </div>
