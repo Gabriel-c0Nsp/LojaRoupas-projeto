@@ -4,7 +4,7 @@
 -----------------------
 - A minha pretenção com esse site é apenas praticar conhecimentos básicos de HTML, CSS e JavaScript.
 
-- A criação dos componentes no primeiro momento terão seus elementos "mocados", entratanto, há um interesse da minha parte de utilizar uma API para fins de prática também.
+- A criação dos componentes no primeiro momento terão seus elementos fixos, entratanto, há um interesse da minha parte de utilizar uma API para fins de prática também.
 -----------------------
 
 ## Como rodar o projeto:
@@ -38,7 +38,7 @@ O terceiro passo é baixar o http-server. Faça isso com o seguinte comando:
 npm install --global http-server
 ```
 
-Por último, você só precisa executar o seguinte comando no projeto clonado:
+Por último, você só precisa executar o seguinte comando na raiz do projeto clonado:
 ```bash
 http-server
 ```

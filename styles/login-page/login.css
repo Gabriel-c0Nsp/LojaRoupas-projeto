@@ -3,12 +3,13 @@
   height: 500px;
   height: 100%;
   margin: 30px 0 0 0;
+  padding-bottom: 75px;
 }
 
 .login-area {
   background-color: #fff;
   margin: 0 auto;
-  padding: 64px 32px;
+  padding: 48px 32px;
   width: 507px;
   height: 100%;
 }
@@ -69,17 +70,154 @@
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
+  transition: .25s;
 }
 
 .login-container form .form-button:hover {
   opacity: 0.7;
 }
 
-.login-container form span a {
+.login-container form .forgot-password a {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.6);
   font-weight: 700;
   text-decoration: none;
   margin-top: 10px;
   float: right;
+}
+
+.login-container .hrs-container {
+  background-color: #fff;
+  height: 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-container .hr-left {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 1px;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.login-container .or-option {
+  background-color: #fff;
+  margin: 0 auto;
+  opacity: 0.8;
+}
+
+.login-container .hr-right {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 40%;
+  height: 1px;
+  float: right;
+  margin: 0 auto;
+  align-self: center;
+}
+
+.login-container .social-media-choice {
+  background-color: #fff;
+  display: flex;
+  margin-top: 18px;
+  justify-content: center;
+  font-weight: 400;
+}
+
+.login-container .social-media-buttons-container {
+  background-color: #fff;
+  width: 100%;
+  height: 46px;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.google-icon {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 45px;
+  border: 2.3px solid blue;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.facebook-icon {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 45px;
+  border: 2.3px solid blue;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.instagram-icon {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 45px;
+  border: 2.3px solid blue;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.google-icon a {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facebook-icon a {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.instagram-icon a {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .social-media-buttons-container .google-icon a img {
+  background-color: #fff;
+  height: 20px;
+}
+
+.login-container .social-media-buttons-container .facebook-icon a img {
+  background-color: #fff;
+  height: 20px;
+}
+
+.login-container .social-media-buttons-container .instagram-icon a img {
+  background-color: #fff;
+  height: 20px;
+}
+
+.login-container .sign-up {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
+  float: right;
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 22px;
+}
+
+.login-container .sign-up a {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.75);
 }
