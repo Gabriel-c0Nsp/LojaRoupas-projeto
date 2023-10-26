@@ -28,7 +28,9 @@
 
 .cards-container .product-img img {
   width: 100%;
-  height: auto;
+  min-height: 440px;
+  max-height: 440px;
+  overflow: hidden;
 }
 
 .cards-container .favorite-status {
