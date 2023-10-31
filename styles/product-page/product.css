@@ -1,0 +1,33 @@
+.product-container {
+  /* background-color: blue; */
+  width: 100%;
+  display: flex;
+}
+
+.product-image-container {
+  /* background-color: red; */
+  height: 520;
+  width: 520px;
+  margin-left: 111px;
+  margin-top: 50px;
+}
+
+.product-image {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.product-image img {
+  max-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+.product-info-container {
+  /* background-color: yellow; */
+  width: 50%;
+  margin-top: 50px;
+}
+

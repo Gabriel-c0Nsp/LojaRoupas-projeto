@@ -1,22 +1,22 @@
-import Product from "./productModel.js";
+import Product from "./productModel.js"
 
 const url = "https://api-lojaroupas-production.up.railway.app/lojaroupas/products"
 
-const productContainer = document.getElementById('productContainer');
+const productContainer = document.getElementById('productContainer')
 
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
     data.forEach((productData) => {
-      const product = new Product();
+      const product = new Product()
 
-      product.title = productData.title;
-      product.price = productData.price;
-      product.image = productData.image;
-      product.id = productData.id;
+      product.title = productData.title
+      product.price = productData.price
+      product.image = productData.image
+      product.id = productData.id
 
-      const productCard = document.createElement('div');
-      productCard.classList.add('card-container');
+      const productCard = document.createElement('div')
+      productCard.classList.add('card-container')
 
       productCard.innerHTML = `
         <a href="content/product-page.html" class="card-container">
