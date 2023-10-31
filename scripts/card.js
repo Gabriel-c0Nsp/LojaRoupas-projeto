@@ -8,7 +8,7 @@ function formatNumber(number) {
     return number.toString().replace(".", ",");
 }
 
-const url = "https://fakestoreapi.com/products"
+const url = "https://api-lojaroupas-production.up.railway.app/lojaroupas/products"
 
 const productContainer = document.getElementById('productContainer');
 
