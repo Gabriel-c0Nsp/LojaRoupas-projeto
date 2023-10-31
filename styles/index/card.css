@@ -24,13 +24,13 @@
   width: 100%;
   max-height: 325px;
   overflow: hidden;
+  position: relative;
 }
 
 .cards-container .product-img img {
-  width: 100%;
-  min-height: 440px;
-  max-height: 440px;
-  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
 }
 
 .cards-container .favorite-status {
@@ -58,6 +58,10 @@
   background-color: #fff;
   width: 100%;
   padding: 10px;
+  min-height: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cards-container .product-info p {

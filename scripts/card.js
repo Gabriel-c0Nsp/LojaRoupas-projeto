@@ -4,10 +4,6 @@ class Product {
   image;
 }
 
-function formatNumber(number) {
-    return number.toString().replace(".", ",");
-}
-
 const url = "https://api-lojaroupas-production.up.railway.app/lojaroupas/products"
 
 const productContainer = document.getElementById('productContainer');
@@ -36,7 +32,7 @@ fetch(url)
             ></i>
           </div>
         <div class="product-info">
-          <p>${product.title}</p>
+          <p>${formatTitle(product)}</p>
           <span>R$ ${formatNumber(product.price)}</span>
         </div>
         </a>
