@@ -31,7 +31,7 @@ fetch(url)
             </div>
           <div class="product-info">
             <p>${formatTitle(product)}</p>
-            <span>R$ ${formatNumber(product.price)}</span>
+            <span>R$ ${formatPrice(product.price)}</span>
           </div>
         </a>
       `;

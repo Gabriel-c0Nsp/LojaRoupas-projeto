@@ -17,6 +17,8 @@ fetch(productUrl)
     product.id = data.id
     product.description = data.description
 
+
+    // product image container
     const productDetailContainer = document.getElementById('productImageContainer')
 
     const productDetail = document.createElement('div')
@@ -27,5 +29,28 @@ fetch(productUrl)
     `;
 
     productDetailContainer.appendChild(productDetail)
+
+
+    // product title container
+    const productTitle = document.getElementById('title')
+
+    const title = document.createElement('h2')
+    title.innerHTML = `
+      
+      <h2>${product.title}</h2>
+    `;
+
+    productTitle.appendChild(title)
+
+
+    // product price section
+    const productPrice = document.getElementById('price')
+
+    const price = document.createElement('span')
+    price.innerHTML = `
+      <span class="price">R$ ${formatPrice(product.price)}</span>
+    `;
+
+    productPrice.appendChild(price)
 
   });

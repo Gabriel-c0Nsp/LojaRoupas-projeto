@@ -47,6 +47,7 @@
 
 .product-info h2 {
   background-color: transparent;
+  font-size: 24px;
 }
 
 .icons {
@@ -54,6 +55,10 @@
   width: 70px;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.icons .favorite-icon {
+  margin-right: 3px;
 }
 
 .icons i {
@@ -80,21 +85,15 @@
 .price {
   font-size: 30px;
   font-weight: bold;
-}
-
-.bottons-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 141px;
-  justify-content: space-around;
+  color: rgb(192, 75, 65);
 }
 
 .buy-section {
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  margin-top: 246px;
+  position: absolute;
+  top: 520px;
 }
 
 .buy-button button {
@@ -116,14 +115,15 @@
 
 .cart-button {
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20px;
+  margin-left: 29px;
 }
 
 .cart-button a {
   background-color: transparent;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cart-button a i {

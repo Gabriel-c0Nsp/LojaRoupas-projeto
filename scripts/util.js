@@ -1,4 +1,4 @@
-function formatNumber(number) {
+function formatPrice(number) {
   let numberFormated = number.toFixed(2);
   return numberFormated.toString().replace(".", ",");
 }
