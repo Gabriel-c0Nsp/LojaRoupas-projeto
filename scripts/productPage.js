@@ -3,7 +3,7 @@ import Product from "./productModel.js";
 const urlParams = new URLSearchParams(window.location.search)
 const productId = urlParams.get('id')
 
-const productUrl = `https://api-lojaroupas-production.up.railway.app/lojaroupas/${productId}`
+const productUrl = `https://api-lojaroupas.up.railway.app/lojaroupas/${productId}`
 
 fetch(productUrl)
   .then((response) => response.json())

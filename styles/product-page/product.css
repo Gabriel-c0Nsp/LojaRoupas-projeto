@@ -1,11 +1,13 @@
 .product-container {
+  background-color: #fff;
   width: 100%;
   display: flex;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  margin-top: 10px;
 }
 
 .product-image-container {
-  height: 520;
   width: 520px;
   margin-left: 111px;
   margin-top: 50px;
@@ -25,12 +27,14 @@
 }
 
 .product-info-container {
+  background-color: #fff;
   width: 50%;
   margin-top: 50px;
   display: flex;
 }
 
 .product-info {
+  background-color: #fff;
   width: 80%;
   height: 27%;
   margin: 0 auto;
@@ -41,6 +45,7 @@
 }
 
 .product-info .title {
+  background-color: #fff;
   width: 435px;
   height: auto;
 }
@@ -51,6 +56,7 @@
 }
 
 .icons {
+  background-color: #fff;
   display: flex;
   width: 70px;
   justify-content: flex-start;
@@ -58,10 +64,16 @@
 }
 
 .icons .favorite-icon {
+  background-color: #fff;
   margin-right: 3px;
 }
 
+.icons .share-icon {
+  background-color: #fff;
+}
+
 .icons i {
+  background-color: #fff;
   float: right;
   font-size: 23px;
   padding-top: 20px;
@@ -75,14 +87,17 @@
 }
 
 .price-section {
+  background-color: #fff;
   display: inline-block;
   height: 0;
   margin: 0;
-  position: absolute;
-  top: 328px;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
 }
 
 .price {
+  background-color: #fff;
   font-size: 30px;
   font-weight: bold;
   color: rgb(192, 75, 65);
