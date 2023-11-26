@@ -8,12 +8,14 @@
 }
 
 .product-image-container {
+  background-color: #fff;
   width: 520px;
   margin-left: 111px;
   margin-top: 50px;
 }
 
 .product-image {
+  background-color: #fff;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -21,6 +23,7 @@
 }
 
 .product-image img {
+  background-color: #fff;
   max-width: 100%;
   min-height: 100%;
   object-fit: cover;

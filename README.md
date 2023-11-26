@@ -3,8 +3,6 @@
 ## Informações gerais: 
 -----------------------
 - A minha pretenção com esse site é apenas praticar conhecimentos básicos de HTML, CSS e JavaScript.
-
-- A criação dos componentes no primeiro momento terão seus elementos fixos, entratanto, há um interesse da minha parte de utilizar uma API para fins de prática também.
 -----------------------
 
 ## Como rodar o projeto:
@@ -15,7 +13,7 @@ git clone https://github.com/Gabriel-c0Nsp/LojaRoupas-projeto
 ### Para Linux:
 O segundo passo é fazer a instalação do Node e do npm. 
 <br><br><br>
-Para Ubuntu (APT):
+Ubuntu (APT):
 ```bash
 sudo apt update
 ```
@@ -24,7 +22,7 @@ sudo apt install nodejs npm
 ```
 
 
-Para Arch (Pacman):
+Arch (Pacman):
 ```bash
 sudo pacman -Syu
 ```

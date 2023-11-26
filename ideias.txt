@@ -1,13 +1,13 @@
-1 - Consertar imagens quebradas (ou simplesmente trocá-las).
-2 - Colocar um card principal (de preferência da cor branca) que irá conter todo o conteúdo da página do produto.
-3 - Adicionar opção para escolha da cor do produto (utilizando uma paleta de cores).
-4 - Implementar lógica para funcionamento da barra de pesquisa do site.
-5 - Adição das categorias na API (para os produtos).
-6 - Implementar funcionalidade de seleção de categoria.
-7 - Adição da entidade usuário na API.
-8 - Adição da lógica de autenticação na parte de login e sigin.
-9 - Adição da parte de carrinho na API (para o usuário).
-10 - Implementação da lógica para adicionar produtos ao carrinho e calcular valor total.
-11 - Adição da parte de favoritos na API (para o usuário).
-12 - Implementação da lógica para adicionar produtos à lista de favoritos.
-13 - Modificar estilização do botão de adicionar aos favoritos (preenchimento ao ser selecionado).
+1 - Consertar imagens quebradas (ou simplesmente trocá-las). [x]
+2 - Colocar um card principal (de preferência da cor branca) que irá conter todo o conteúdo da página do produto. [x]
+4 - Implementar lógica para funcionamento da barra de pesquisa do site. [x]
+3 - Adicionar opção para escolha da cor do produto (utilizando uma paleta de cores). []
+5 - Adição das categorias na API (para os produtos). []
+6 - Implementar funcionalidade de seleção de categoria. []
+7 - Adição da entidade usuário na API. []
+8 - Adição da lógica de autenticação na parte de login e sigin. []
+9 - Adição da parte de carrinho na API (para o usuário). []
+10 - Implementação da lógica para adicionar produtos ao carrinho e calcular valor total. []
+11 - Adição da parte de favoritos na API (para o usuário). []
+12 - Implementação da lógica para adicionar produtos à lista de favoritos. []
+13 - Modificar estilização do botão de adicionar aos favoritos (preenchimento ao ser selecionado). []
