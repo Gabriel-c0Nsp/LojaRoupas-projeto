@@ -1,6 +1,6 @@
 import Product from "./productModel.js";
 
-const url = "https://api-lojaroupas.up.railway.app/lojaroupas/products";
+const url = "http://localhost:8080/lojaroupas/products";
 const productContainer = document.getElementById("productContainer");
 
 fetch(url)
