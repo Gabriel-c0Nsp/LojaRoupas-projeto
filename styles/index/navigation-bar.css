@@ -11,13 +11,13 @@
   list-style: none;
 }
 
-.navigation-bar nav div ul li a {
+.navigation-bar nav div ul li span {
   position: relative;
-  text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
 }
 
-.navigation-bar nav div ul li a::before {
+.navigation-bar nav div ul li span::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -29,10 +29,21 @@
   transition: width 0.3s;
 }
 
-.navigation-bar nav div ul li a:hover::before {
+.navigation-bar nav div ul li span:hover::before {
   width: 100%;
 }
 
-.navigation-bar nav div ul li a:hover {
+.navigation-bar nav div ul li span:hover {
   color: rgb(189, 2, 2, 1);
+}
+
+.active {
+  /* Adicione estilos específicos para o estado "active" */
+  .navigation-bar nav div ul li span.active::before {
+    width: 100%;
+  }
+
+  .navigation-bar nav div ul li span.active:hover {
+    color: rgb(189, 2, 2, 1);
+  }
 }

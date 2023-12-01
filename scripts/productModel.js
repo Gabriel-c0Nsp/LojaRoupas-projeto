@@ -1,5 +1,6 @@
 class Product {
   id;
+  category;
   title;
   price;
   image;
