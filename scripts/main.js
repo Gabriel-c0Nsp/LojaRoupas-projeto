@@ -7,6 +7,7 @@ const productContainer = document.getElementById("productContainer");
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
+    console.log(data);
     const productCards = [];
     const productsList = data.map((productData) => {
       const product = new Product();
@@ -36,6 +37,11 @@ fetch(url)
           </div>
         </a>`;
 
+      productCard.addEventListener("click", (event) => {
+        event.preventDefault();
+        window.location.href = `content/product-page.html?id=${product.id}`;
+      });
+
       productCards.push(productCard);
       productContainer.appendChild(productCard);
     });
@@ -51,6 +57,7 @@ fetch(url)
       categoryAccessories: document.getElementById("acessorios"),
     };
 
+    const navigationBar = document.getElementById('navigationBar')
     Object.values(categoryArr).forEach((categoryElement) => {
       categoryElement.addEventListener("click", (event) => {
         const selectedCategory = event.target.id.toLowerCase();

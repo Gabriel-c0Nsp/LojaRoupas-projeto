@@ -1,4 +1,5 @@
 import Product from "./productModel.js";
+import { formatPrice } from "./util.js";
 
 const urlParams = new URLSearchParams(window.location.search)
 const productId = urlParams.get('id')
