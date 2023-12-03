@@ -7,7 +7,6 @@ const productContainer = document.getElementById("productContainer");
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     const productCards = [];
     const productsList = data.map((productData) => {
       const product = new Product();
@@ -46,6 +45,7 @@ fetch(url)
       productContainer.appendChild(productCard);
     });
 
+    // category section
     const categoryArr = {
       categoryOffers: document.getElementById("ofertas"),
       categoryBrandNew: document.getElementById("novidades"),
@@ -57,10 +57,13 @@ fetch(url)
       categoryAccessories: document.getElementById("acessorios"),
     };
 
-    const navigationBar = document.getElementById('navigationBar')
     Object.values(categoryArr).forEach((categoryElement) => {
       categoryElement.addEventListener("click", (event) => {
         const selectedCategory = event.target.id.toLowerCase();
+
+        Object.values(categoryArr).forEach((element) => {
+          element.style.color = "black";
+        });
 
         for (let i = 0; i < productsList.length; i++) {
           const categoryValue = productsList[i].category.toLowerCase();
@@ -68,6 +71,7 @@ fetch(url)
 
           if (categoryValue === selectedCategory) {
             productCard.style.display = "block";
+            event.target.style.color = "rgb(189, 2, 2, 1)";
           } else {
             productCard.style.display = "none";
           }
@@ -75,6 +79,19 @@ fetch(url)
       });
     });
 
+    const logo = document
+      .getElementById("logo")
+      .addEventListener("click", () => {
+        for (let i = 0; i < productsList.length; i++) {
+          const productCard = productCards[i];
+          productCard.style.display = "block";
+        }
+        Object.values(categoryArr).forEach((element) => {
+          element.style.color = "";
+        });
+      });
+
+    // search section
     const search = () => {
       const searchBar = document
         .getElementById("searchBar")

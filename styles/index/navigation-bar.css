@@ -36,14 +36,3 @@
 .navigation-bar nav div ul li span:hover {
   color: rgb(189, 2, 2, 1);
 }
-
-.active {
-  /* Adicione estilos específicos para o estado "active" */
-  .navigation-bar nav div ul li span.active::before {
-    width: 100%;
-  }
-
-  .navigation-bar nav div ul li span.active:hover {
-    color: rgb(189, 2, 2, 1);
-  }
-}
