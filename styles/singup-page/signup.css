@@ -199,7 +199,7 @@
   height: 20px;
 }
 
-.login-container .sign-up {
+.login-container .sign-in {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
   float: right;
@@ -208,7 +208,7 @@
   margin-top: 22px;
 }
 
-.login-container .sign-up a {
+.login-container .sign-in a {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.75);
 }

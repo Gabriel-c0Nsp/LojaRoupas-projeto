@@ -8,7 +8,7 @@
     <link href="../styles/index/style.css" rel="stylesheet" />
     <link href="../styles/index/menu-bar.css" rel="stylesheet" />
     <link href="../styles/index/navigation-bar.css" rel="stylesheet" />
-    <link href="../styles/singin-page/singin.css" rel="stylesheet" />
+    <link href="../styles/singup-page/signup.css" rel="stylesheet" />
     <!-- icons -->
     <script
       src="https://kit.fontawesome.com/97faa798f5.js"
@@ -26,6 +26,7 @@
           type="text"
           class="input"
           placeholder="O que você está procurando?"
+          name="searchBar"
         />
         <div class="common_button">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -79,21 +80,44 @@
 
     <div class="login-container">
       <div class="login-area">
-        <form action="">
+        <form id="form" method="post">
           <h2>CRIAR CONTA</h2>
           <div class="form-group">
-            <label for="">Nome ou apelido:</label>
-            <input type="text" class="form-control" required />
+            <label for="signUpName">Nome ou apelido:</label>
+            <input
+              type="text"
+              id="signUpName"
+              name="signUpName"
+              class="form-control"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="">Número de celular ou E-mail:</label>
-            <input type="text" class="form-control" required />
+            <label for="signUpEmailOrPhone">Número de celular ou E-mail:</label>
+            <input
+              type="text"
+              id="signUpEmailOrPhone"
+              name="signUpEmailOrPhone"
+              class="form-control"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="">Senha:</label>
-            <input type="password" class="form-control" required />
+            <label for="signUpPassword">Senha:</label>
+            <input
+              type="password"
+              id="signUpPassword"
+              name="signUpPassword"
+              class="form-control"
+              required
+            />
           </div>
-          <input type="submit" class="form-button" value="CONTINUAR" />
+          <input
+            type="submit"
+            id="submitForm"
+            class="form-button"
+            value="CONTINUAR"
+          />
           <div class="hrs-container">
             <div class="hr-left"></div>
             <span class="or-option">Ou</span>
@@ -119,11 +143,13 @@
               </a>
             </div>
           </div>
-          <span class="sign-up"
+          <span class="sign-in"
             >Já possui uma conta?&nbsp<a href="login-page.html">LOGIN</a></span
           >
         </form>
       </div>
     </div>
+    <script type="module" src="../scripts/signUp.js"></script>
+    <script type="module" src="../scripts/util.js"></script>
   </body>
 </html>

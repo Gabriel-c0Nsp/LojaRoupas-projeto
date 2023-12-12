@@ -12,7 +12,15 @@ export function formatTitle(product) {
   }
 }
 
-export function validadeEmail(email) {
+
+// login and signup page
+
+export function validateName(name) {
+  const regex = /^[a-zA-Z]{8,}$/;
+  return regex.test(name);
+}
+
+export function validateEmail(email) {
   const regex = /^[a-zA-Z][a-zA-Z0-9.]{10,}@(gmail\.com|hotmail\.com|outlook\.com)$/i;
   return regex.test(email);
 }
