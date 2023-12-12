@@ -1,7 +1,7 @@
 import Product from "./productModel.js";
 import { formatTitle, formatPrice } from "./util.js";
 
-const url = "http://localhost:8080/lojaroupas/products";
+const url = "http://localhost:8080/lojaroupas/product/products";
 const productContainer = document.getElementById("productContainer");
 
 fetch(url)
@@ -23,7 +23,7 @@ fetch(url)
       productCard.classList.add("card-container");
 
       productCard.innerHTML = `
-        <a href="content/product-page.html" class="card-container">
+        <a href="src/product-page.html" class="card-container">
           <div class="product-img">
             <img src="${product.image}" alt="product-image" />
           </div>
@@ -38,7 +38,7 @@ fetch(url)
 
       productCard.addEventListener("click", (event) => {
         event.preventDefault();
-        window.location.href = `content/product-page.html?id=${product.id}`;
+        window.location.href = `src/product-page.html?id=${product.id}`;
       });
 
       productCards.push(productCard);
@@ -79,9 +79,7 @@ fetch(url)
       });
     });
 
-    const logo = document
-      .getElementById("logo")
-      .addEventListener("click", () => {
+    const logo = document.getElementById("logo").addEventListener("click", () => {
         for (let i = 0; i < productsList.length; i++) {
           const productCard = productCards[i];
           productCard.style.display = "block";
@@ -93,9 +91,7 @@ fetch(url)
 
     // search section
     const search = () => {
-      const searchBar = document
-        .getElementById("searchBar")
-        .value.toLowerCase();
+      const searchBar = document.getElementById("searchBar").value.toLowerCase();
 
       for (let i = 0; i < productsList.length; i++) {
         const productTitle = productsList[i].title.toLowerCase();

@@ -4,7 +4,7 @@ import { formatPrice } from "./util.js";
 const urlParams = new URLSearchParams(window.location.search)
 const productId = urlParams.get('id')
 
-const productUrl = `http://localhost:8080/lojaroupas/${productId}`
+const productUrl = `http://localhost:8080/lojaroupas/product/${productId}`
 
 fetch(productUrl)
   .then((response) => response.json())

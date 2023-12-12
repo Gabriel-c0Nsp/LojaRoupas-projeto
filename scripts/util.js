@@ -11,3 +11,18 @@ export function formatTitle(product) {
     return titleToFormat
   }
 }
+
+export function validadeEmail(email) {
+  const regex = /^[a-zA-Z][a-zA-Z0-9.]{10,}@(gmail\.com|hotmail\.com|outlook\.com)$/i;
+  return regex.test(email);
+}
+
+export function validatePassword(password) {
+  const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+]).{12,}$/;
+  return regex.test(password);
+}
+
+export function validatePhoneNumber(phoneNumber) {
+  const regex = /^(\d{2}[- ]?\d{5}[- ]?\d{4}|\d{11})$/;
+  return regex.test(phoneNumber);
+}
